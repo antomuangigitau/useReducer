@@ -1,13 +1,4 @@
-export const buttons = [
-  {
-    id: 1,
-    title: 'Add User',
-  },
-  {
-    id: 2,
-    title: 'Okay',
-  },
-];
+
 
 // export const people = [
 //   {

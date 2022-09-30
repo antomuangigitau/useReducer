@@ -6,7 +6,7 @@ import { useGlobalContext } from '../Context';
 import Modal from '../modal/Modal';
 
 const AddUser = () => {
-  const { buttons, addPeople, nothingAdded, modalOpen } = useGlobalContext();
+  const { addPeople, nothingAdded, modalOpen } = useGlobalContext();
   console.log(useGlobalContext());
   const [userName, setUserName] = useState('');
   const [age, setAge] = useState('');
@@ -44,7 +44,7 @@ const AddUser = () => {
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />
-        <Button title={buttons[0].title} />
+        <Button type='submit'>Add User</Button>
       </form>
     </Card>
   );
